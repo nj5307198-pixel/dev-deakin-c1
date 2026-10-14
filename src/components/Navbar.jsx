@@ -26,10 +26,9 @@ export default function Navbar() {
         </label>
 
         <div className="flex items-center gap-4 text-sm text-slate-800">
-          {/* Post is implemented in a future task */}
-          <button type="button" className="hover:text-brand-600">
+          <Link to="/post" className="hover:text-brand-600">
             Post
-          </button>
+          </Link>
           {user ? (
             <button type="button" onClick={signOut} className="hover:text-brand-600">
               Logout
